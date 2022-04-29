@@ -1,4 +1,4 @@
-package com.example.hello.controller;
+package com.example.hello.controller.crud;
 
 import com.example.hello.dto.UserRequest;
 import org.springframework.web.bind.annotation.*;
@@ -68,7 +68,7 @@ public class GetApiController {
 
     // 명시적으로 변수로 받는다해도 갯수가 많아지면 불편하므로 dto로 형태로 mapping 할수도 있다.
     // 파라미터가 dto 객체로 들어오게되면 URL의 ? 뒤에 값들을 스프링부트에서 판단하고
-    // json key에 해당되는 이름을 dto내의 변수와 매칭을 한다.
+    // json key에 해당되는 이름을 dto내의 변수와 매칭을 한다. 즉  json key == dto 변수가 같아야한다
     // 3) 파라미터 받는 방법 세번째
     @GetMapping(path = "query-param-3")
     public String queryParam3(UserRequest userRequest) {

@@ -1,14 +1,16 @@
 package com.example.hello.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.PropertyNamingStrategies;
+import com.fasterxml.jackson.databind.annotation.JsonNaming;
 
-//@JsonNaming(value = PropertyNamingStrategy.SnakeCaseStrategy.class)
+@JsonNaming(value = PropertyNamingStrategies.SnakeCaseStrategy.class)
 public class CarDto {
 
-    @JsonProperty("car_name")
+//    @JsonProperty("car_name")
     private String carName;
 
-    @JsonProperty("car_number")
+//    @JsonProperty("car_number")
     private String carNumber;
 
     public String getCarName() {

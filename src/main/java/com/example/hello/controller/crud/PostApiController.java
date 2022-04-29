@@ -1,4 +1,4 @@
-package com.example.hello.controller;
+package com.example.hello.controller.crud;
 
 import com.example.hello.dto.PostRequestDto;
 import org.springframework.web.bind.annotation.PostMapping;

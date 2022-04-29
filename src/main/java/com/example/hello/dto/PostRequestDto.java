@@ -9,10 +9,10 @@ public class PostRequestDto {
     private String address;
     private String password;
 
-    // 자바는 기본적으로 카멜케이스(첫단어소문자 그다음대문자)
-    @JsonProperty("phone_number")  // View단에서 PhoneNumber(카멜케이스)가 아닌 phone_number 로 접근 할 수 있다.
-    private String phoneNumber;  // PostMan에서 key는 phone_number (스네이크케이스)로 지정한 상태
-
+    // 자바는 기본적으로 스네이크 케이스(단어별로 언더바_)
+    @JsonProperty("phone_number")  // View단에서 PhoneNumber(카멜케이스)가 아닌
+    private String phoneNumber;    // phone_number(스네이크케이스)로 접근 할 수 있다.
+                                   // PostMan에서 key는 phone_number (스네이크케이스)로 지정한 상태
 
 
     public String getAccount() {
