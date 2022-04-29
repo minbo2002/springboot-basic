@@ -17,8 +17,8 @@ public class ApiController {
     }
 
     // JSON 방식
-    // request가 오면  -->  Object Mapper에 의해서  -->  object로 바뀐 다음 --> method를 타게된다.
-    // object를 던지면 -->  Object Mapper에 의해서  -->  json으로 바뀐 다음  --> response가 내려간다.
+    // Controller에서 JSON 방식의 Text로 request를 주면 --> ObjectMapper에 의해서 --> Object로 바뀌고 --> method를 타게된다.
+    // response를 Object로 return 하게되면 --> ObjectMapper에 의해서 --> JSON 방식의 Text 로 바뀐다.
     @PostMapping("/json")
     public UserDto json(@RequestBody UserDto userDto) {
 
